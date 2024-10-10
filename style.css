@@ -54,7 +54,7 @@ input{
     outline: none;
     background: transparent;
     padding: 10px;
-    font-weight: 14px;
+    font-weight: 20px;
 }
 
 button{
@@ -65,8 +65,33 @@ button{
     color: #fff;
     font-size: 15px;
     cursor: pointer;
+    border-radius: 40px;
 }
 
 button:hover{
     background-color:#355d76;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor:pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 30%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 10px;
+    left: 8px;
+
+
 }
